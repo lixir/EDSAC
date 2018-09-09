@@ -406,14 +406,14 @@ void O(unsigned int n) {
             return;
         default:
             if (outputShift) {
-                for (int i = 0; i < (sizeof(valuesO) / sizeof(unsigned long)); i++) {
+                for (int i = 0; i < (int) (sizeof(valuesO) / sizeof(unsigned long)); i++) {
                     if (tempUnLong == valuesO[i]) {
                         outputSymbol = figureSymbols[i];
                         return;
                     }
                 }
             } else {
-                for (int i = 0; i < (sizeof(valuesO) / sizeof(unsigned long)); i++) {
+                for (int i = 0; i < (int) (sizeof(valuesO) / sizeof(unsigned long)); i++) {
                     if (tempUnLong == valuesO[i]) {
                         outputSymbol = letterSymbols[i];
                         return;
@@ -428,11 +428,11 @@ void F(unsigned int n) {
     Memory[n] = 0;
 }
 
-void Y(unsigned int n) {
+void Y() {
     Accumulator1 = 0;
     Accumulator2 %= (base35 + 1);
 }
 
-void Z(unsigned int n) {
+void Z() {
     stepByStep = 1;
 }

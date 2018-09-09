@@ -153,11 +153,11 @@ int main(int argc, char *argv[]) {
                 currentCell++;
                 break;
             case 0b00110:
-                Y(memoryValue);
+                Y();
                 currentCell++;
                 break;
             case 0b01101:
-                Z(memoryValue);
+                Z();
                 currentCell++;
                 break;
             default:

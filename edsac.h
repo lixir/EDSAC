@@ -70,9 +70,9 @@ void O(unsigned int n);
 
 void F(unsigned int n);
 
-void Y(unsigned int n);
+void Y();
 
-void Z(unsigned int n);
+void Z();
 
 
 #endif
