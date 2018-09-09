@@ -181,9 +181,7 @@ void test_C_2(){
 void test_L(){
     Accumulator1 = 0b11111111111111111;
     Accumulator2 = 9007130535264256;
-
     L(0b100);
-
     if (Accumulator1 == 0b11111111111111011 && Accumulator2 == 18013848753668096)
         printf("test L Complete \n");
     else {
@@ -195,10 +193,7 @@ void test_L(){
 void test_R_1(){
     Accumulator1 = 0b11111111111111111;
     Accumulator2 = 9007130535264256;
-
     R(0b100);
-
-
     if (Accumulator1 == 0b11111111111111111 && Accumulator2 == 16888490012704768)
         printf("test R_1 Complete \n");
     else {
@@ -210,10 +205,7 @@ void test_R_1(){
 void test_R_2(){
     Accumulator1 = 0b01111111111111111;
     Accumulator2 = 9007130535264256;
-
     R(0b100);
-
-
     if (Accumulator1 == 0b00001111111111111 && Accumulator2 == 16888490012704768)
         printf("test R_2 Complete \n");
     else {
